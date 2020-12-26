@@ -1,0 +1,6 @@
+<div class="play">
+  <span class="play__greeting">Hello, {{ playerName }}!</span>
+  <span>You have made {{ clicks }} clicks</span>
+  <button class="play__circle" (click)="startGame()" [disabled]="disabledCircle">Click to {{ buttonMessage }}</button>
+  <span>Timer {{ timer }} sec</span>
+</div>

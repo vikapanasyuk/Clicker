@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Clicker';
+
+  playerName: string;
+
+  savePlayerName(name) {
+    this.playerName = name;
+    console.log(this.playerName)
+  }
 }

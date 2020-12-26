@@ -1,0 +1,37 @@
+.info {
+
+  &__change {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-bottom: 20px;
+
+    > *:last-child {
+      background-color: gray;
+      border: 1px solid gray;
+    }
+
+    > * {
+      padding: 10px 20px;
+      background-color: teal;
+      border: 1px solid teal;
+      border-radius: 5px;
+      color: white;
+      font-weight: 600;
+      margin: 5px 10px 5px 0;
+      font-size: 16px;
+      outline: none;
+
+      &:disabled {
+        background-color: lightgray;
+        border: 1px solid lightgray;
+      }
+
+      &:hover:enabled {
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}

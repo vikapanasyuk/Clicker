@@ -1,0 +1,11 @@
+<input
+  type="radio"
+  name="seconds"
+  [id]="'sec' + second.value"
+  [value]="second.value"
+  [checked]="second.checked"
+  [disabled]="disabledBtn"
+  (change)="chooseSeconds($event)"
+  >
+  <label [for]="'sec' + second.value">{{ second.value }} sec</label>
+

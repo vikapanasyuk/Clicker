@@ -1,0 +1,6 @@
+<div class="green" *ngIf="isBestResult">
+  <span>Congratulation {{ playerName }}!!!</span>
+  <span>You set new record for {{ seconds }} = {{ clicks }} clicks</span>
+</div>
+<div class="blue" *ngIf="isGoodResult">{{ playerName }}, your result is good, but not enough to be champion</div>
+<div class="red" *ngIf="isBadResult">{{ playerName }}, your result is bad, you have to more practice</div>

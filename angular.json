@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Clicker"
+    }
+  },
+  "defaultProject": "Clicker",
+  "cli": {
+    "analytics": false
+  }
 }

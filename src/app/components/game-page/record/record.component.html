@@ -1,0 +1,11 @@
+<div class="records">
+  <span>Previous record for {{ seconds }} is: {{ recordClicks }} clicks</span>
+</div>
+<app-result
+  [playerName]="playerName"
+  [seconds]="seconds"
+  [clicks]="clicks"
+  [isBestResult]="isBestResult"
+  [isGoodResult]="isGoodResult"
+  [isBadResult]="isBadResult"
+></app-result>

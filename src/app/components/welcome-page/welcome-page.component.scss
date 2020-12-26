@@ -1,0 +1,45 @@
+.welcome {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  background-color: teal;
+  color: #ffffff;
+
+  &__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 230px;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    padding: 10px;
+    background-color: darkgray;
+    color: teal;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 25px;
+    outline: none;
+
+    &:hover {
+      color: #ffffff;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,24 @@
+<div>
+  <div class="seconds-btn">
+    <button (click)="chooseSeconds(5)">5 sec</button>
+    <button (click)="chooseSeconds(10)">10 sec</button>
+    <button (click)="chooseSeconds(15)">15 sec</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Num</th>
+        <th>Name</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of filteredPlayers; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ player.name }}</td>
+        <td>{{ player.result }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="back-btn" routerLink="/play-game">Back</button>
+</div>

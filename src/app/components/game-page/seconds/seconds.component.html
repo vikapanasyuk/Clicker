@@ -1,0 +1,8 @@
+<div class="info__seconds">
+  <app-input
+    *ngFor="let second of seconds"
+    [second]="second"
+    [disabledBtn]="disabledBtn"
+    (chosenSeconds)="chooseSeconds($event)"
+  ></app-input>
+</div>

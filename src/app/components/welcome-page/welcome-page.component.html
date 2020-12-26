@@ -1,0 +1,5 @@
+<div class="welcome">
+  <span class="welcome__title">What is your name?</span>
+  <input class="welcome__input" type="text" [(ngModel)]="playerName">
+  <button class="welcome__button" (click)="setPlayerName()" routerLink="/play-game">Let's play</button>
+</div>

@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="game-container">
+    <app-play-field
+      [playerName]="playerName"
+      [clicks]="clicks"
+      [buttonMessage]="buttonMessage"
+      [timer]="timer"
+      [disabledCircle]="disabledCircle"
+      (start)="startGame()"
+    ></app-play-field>
+    <div class="info">
+      <app-seconds
+        [disabledBtn]="disabledBtn"
+        (chosenSecondValue)="getSeconds($event)"
+      ></app-seconds>
+      <app-buttons
+        [disabledBtn]="disabledBtn"
+        (reset)="resetGame()"
+      ></app-buttons>
+      <app-record
+        [seconds]="seconds"
+        [recordClicks]="recordClicks"
+        [playerName]="playerName"
+        [seconds]="seconds"
+        [clicks]="clicks"
+        [isBestResult]="isBestResult"
+        [isGoodResult]="isGoodResult"
+        [isBadResult]="isBadResult"
+      ></app-record>
+    </div>
+  </div>
+</div>
