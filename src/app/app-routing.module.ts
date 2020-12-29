@@ -14,7 +14,7 @@ const routes: Routes = [
     component: RecordsPageComponent
   },
   {
-    path: "",
+    path: "/",
     component: WelcomePageComponent
   }
 ];
