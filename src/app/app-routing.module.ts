@@ -6,15 +6,15 @@ import { RecordsPageComponent } from './components/records-page/records-page.com
 
 const routes: Routes = [
   {
-    path: "/play-game",
+    path: "play-game",
     component: GamePageComponent
   },
   {
-    path: "/records",
+    path: "records",
     component: RecordsPageComponent
   },
   {
-    path: "/",
+    path: "",
     component: WelcomePageComponent
   }
 ];
