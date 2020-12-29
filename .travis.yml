@@ -5,7 +5,7 @@ before_install:
 - npm install -g @angular/cli
 install: npm install
 branches:
-  on:
+  only:
   - main
 deploy:
   provider: heroku
